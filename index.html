@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bap Er Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script> 
+<style>
+    *{
+        
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+</style>
+
+</head>
+<body class="max-w-[1920px] mx-auto">
+
+    <header>
+       <div class=" flex flex-col justify-center items-center">
+        <h1 class="text-[60px] font-[700]">Welcome to <span class="text-purple-600 ">BAP ER BANK</span></h1>
+        <p class="font-[700] text-[30px]">Thanks for chossing us 😊 </p>
+       </div>
+    </header>
+    <main class="mx-50px mt-[100px] ">
+        <div class="grid grid-cols-3 gap-[25px]">
+            <!-- Main Balance -->
+            <div class="bg-green-400 rounded-2xl w-[600px] h-[200px] flex flex-col items-center justify-center ">
+                <h1 class="text-[50px] font-[600]">Main Balance</h1>
+                <span class="text-[50px] font-[600]" id="main_balance">00.00</span>
+
+            </div>
+            <!-- Deposit -->
+             <div class="bg-yellow-500 rounded-2xl w-[600px] h-[200px] flex flex-col items-center justify-center">
+                <h1 class="text-[50px] font-[600]">Deposit</h1>
+                <span class="text-[50px] font-[600]" id="deposit">00.00</span>
+
+             </div >
+             <!-- Withdraw -->
+              <div class="bg-purple-400 rounded-2xl w-[600px] h-[200px]  flex flex-col items-center justify-center">
+                <h1 class="text-[50px] font-[600]">Withdraw</h1>
+                <span class="text-[50px] font-[600]" id="withdraw">00.00</span>
+              </div>
+
+        </div>
+
+        <section class="mx-[100px] mt-[100px] grid grid-cols-2"> 
+            <div class="bg-blue-600 rounded-2xl w-[700px] h-[250px] flex flex-col space-y-[20px] px-[30px] flex flex-col justify-center">
+              <h1 class="text-[45px] font-[600]">Enter Withdraw Amount</h1>
+              <input type="number" placeholder="    Amount you want to Withdraw" class="w-[350px] h-[50px] rounded-2xl" id="w_input">
+              <div><button class="btn btn-error text-white " id="btn_w" >Withdraw</button></div>
+
+            </div>
+
+            <div class="bg-blue-600 rounded-2xl w-[700px] h-[250px] flex flex-col space-y-[20px] px-[30px] flex flex-col justify-center">
+              <h1 class="text-[45px] font-[600]">Enter Deposit Amount</h1>
+              <input type="number" placeholder="    Amount you want to Withdraw" class="w-[350px] h-[50px] rounded-2xl" id="d_input">
+              <div><button class="btn btn-error text-white " id="btn_d" >Deposit</button></div>
+
+            </div>
+
+         
+
+        </section>
+    </main>
+
+    <footer class="mt-24 ">
+        <div class="flex justify-center">
+            <h1 class=" text-[50px]">HAPPY BANKING 😊</h1>
+        </div>
+    </footer>
+    
+
+
+
+<script src="cal.js"></script>
+    
+</body>
+</html>
